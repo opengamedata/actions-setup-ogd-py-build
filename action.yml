@@ -23,6 +23,7 @@ runs:
       run: |
         ${{ env.python_command }} -m pip install build==1.2.* --quiet
         ${{ env.python_command }} -m pip install setuptools==74.1.* --quiet
-        ${{ env.python_command }} -m pip install twine==4.0.* --quiet
+        ${{ env.python_command }} -m pip install setuptools-git-versioning==2.0.* --quiet
+        ${{ env.python_command }} -m pip install twine==5.1.* --quiet
         ${{ env.python_command }} -m pip install wheel==0.44.* --quiet
       shell: bash
